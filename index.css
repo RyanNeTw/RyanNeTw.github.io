@@ -89,9 +89,6 @@ header ul li a:hover:after{
 #menu{
     padding: 200px 200px 0px 200px;
 }
-#menu div{
-    border: #0d0d0d solid 1px;
-}
 #menu input{
     display: none;
 }
@@ -146,6 +143,7 @@ header ul li a:hover:after{
     display: flex;
     flex-direction: column;
     gap:15px;
+    width: 100%;
 }
 #menu div article .projet h1{
     font-size: 25px;
@@ -174,13 +172,12 @@ header ul li a:hover:after{
 #menu div article .projet a:hover::after{
     width: 100%;
 }
-#menu div article span{
+#menu div article .projet span{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    gap: 195px;
+    
 }
-
 /*End Menu*/
 
 
@@ -239,6 +236,7 @@ header ul li a:hover:after{
     display: flex;
     flex-direction: row;
     gap: 10px;
+    justify-content: flex-start;
 }
 #about p{
     font-size: 30px;
@@ -460,6 +458,35 @@ footer .right a:hover{
 
 
 /*Start Responsive*/
+@media screen and (max-width:1400px) {
+    #about{
+        padding: 200px 50px 0px 200px;
+    }
+    #about p, #about h1{
+        font-size: 25px;
+    }
+    #arrow{
+        left: 1200px;
+    }
+    #menu div article .projet span img{ 
+        height: 400px;
+    }
+    
+}
+@media screen and (max-width:1200px) {
+    #about{
+        padding: 200px 20px 0px 200px;
+    }
+    #about p, #about h1{
+        font-size: 20px;
+    }
+    #arrow{
+        left: 900px;
+    }
+    #menu div article .projet span img{ 
+        height: 400px;
+    }
+}
 @media screen and (max-width: 950px){
     header{
         padding: 0px 30px 0px 30px;
