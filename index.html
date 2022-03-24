@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="reset.css">
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <script src="https://kit.fontawesome.com/52d9cb7530.js" crossorigin="anonymous"></script>
+    <script src="script.js" defer></script>
+    <title>Document</title>
+</head>
+<body class="container">
+   <header>
+       <h1><a href="">Ryan Ez Zerqti</a></h1>   
+       <ul class="langWrap">
+            <a href="#"  language='english' class="active english">English</a>
+            <a href="#" language='french' class="french">Francais</a>
+       </ul>
+       <ul>
+           <li>
+               <a href="#about" class="about">About</a>
+           </li>
+           <li>
+                <a href="#menu" class="project">Projects</a>
+            </li>
+            <li>
+                <a href="#contact" class="contact">Contact</a>
+            </li>
+       </ul>
+   </header>
+
+
+
+   <section id="intro">
+        <h1 class="hi">Hi, I'm <p class="ryan">Ryan Ez Zerqti</p></h1>
+        <h2 class="ml4">
+            <span class="letters letters-1">Web Developer Student</span>
+            <span class="letters letters-2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Jobless&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+            <span class="letters letters-3">&nbsp;Graphic Designer</span>
+          </h1>
+   </section>
+
+
+   <section id="about">
+        <img alt="This is picture is showing Ryan Ez Zerqti"src="picture.png">
+        <div class="about-txt">
+            <h2 class="title-about">About Me</h2>
+            <div class="about-txt-inside">
+                <p class="about-line1-p">Web Developer Student</p>
+                <h1 class="about-line1-h1">, I'm Still Learning</h1>
+            </div>
+            <div class="about-txt-inside">
+                <h1 class="about-line2-h1">I Love </h1>
+                <p class="about-line2-p1">Programming</p>
+                <h1>, </h1>
+                <p class="about-line2-p2">Video Games</p>
+                <h1 class="about-line2-h2"> and </h1>
+                <p>Photoshop</p>
+            </div>
+            <div class="about-txt-inside">
+                <h1 class="about-line3-h1">I am currently a student at </h1>
+                <p>Epitech Digital</p>
+            </div>
+        </div>
+    </section>
+
+    <a href="#contact">
+        <i class="fas fa-arrow-alt-circle-down" id="arrow"></i>
+    </a>
+
+
+    
+    <section id="menu">
+        <div>
+            <input type="radio" name="tab" id="tab-projet1" checked>
+            <input type="radio" name="tab" id="tab-projet2">
+            <input type="radio" name="tab" id="tab-projet3">
+            <input type="radio" name="tab" id="tab-projet4">
+            <input type="radio" name="tab" id="tab-projet5">
+            <input type="radio" name="tab" id="tab-projet6">
+            <ul>
+                <li><label for="tab-projet1">Karaoke</label></li>
+                <li><label for="tab-projet2">Tournament</label></li>
+                <li><label for="tab-projet3">MiiLove</label></li>
+                <li><label for="tab-projet4">Get Velib</label></li>
+                <li><label for="tab-projet5">Pokedex</label></li>
+                <li><label for="tab-projet6">Integration</label></li>
+            </ul>
+            <article id="tab-projet1">
+                <div class="projet">
+                    <h1>Karaoke</h1>
+                    <p class="karaoke-txt">I developed a karaoke using JavaScript which displays lyrics while the music is playing. Using a file containing lyrics and timings to show them. I used Regex to sort timings and lyrics of the text file, and using AJAX method to display lyrics on the page.</p>
+                    <a href="https://github.com/RyanNeTw/Karaoke" target="_blank" class="projet-button1">LEARN MORE</a>
+                </div>
+            </article>
+            <article id="tab-projet2">
+                <div class="projet">
+                    <h1>Rocket League Tournament</h1>
+                    <p class="rocket-txt">A tournament creation simulation related to the cult game rocket league. The project was developed in PHP following the mvc model. You can create and join games related to the game according to the number of tokens in possession. </p>
+                    <a href="" target="_blank" class="projet-button2">LEARN MORE</a>
+                </div>
+            </article>
+            <article id="tab-projet3">
+                <div class="projet">
+                    <h1>MiiLove</h1>
+                    <p class="miilove-txt">This is an end of year project, done with other fellow developers, designers and markets. We simulated a dating site for activists, I focused on the back end.</p>
+                    <a href="" target="_blank" class="projet-button3">LEARN MORE</a>
+                </div>
+            </article>
+            <article id="tab-projet4">
+                <div class="projet">
+                    <h1>Get Velib</h1>
+                    <p class="velib-txt">This project I devlopped in JavaScript, allows anyone to see the main informations about velibs in the Parmentier street in Paris. It first shows you a loading bar representing the percentage of velibs available in the street compared to the total number of charging stations. Then it shows you the exact number of velibs available (in green if the percentage is greater than the third of the total of charging borns, in red in the other case). You can also see the percentage of eVelibs (electric ones) and mechanical velibs. There is also a small map to know exactly where is the street.</p>
+                    <a href="https://github.com/RyanNeTw/Get-Velib" target="_blank" class="projet-button4">LEARN MORE</a>
+                </div>
+            </article>
+            <article id="tab-projet5">
+                <div class="projet">
+                    <h1>Pokedex</h1>
+                    <p class="pokedex-txt">This Pokedex made in PHP, allows you to search any Pokemon by his name, or if you don't have a favorite Pokemon to search for, you simply can search a type and it will shows you all Pokemons of the selected type. I used a JSON file containing multiple informations about more than 800 Pokemons, like their ID, their names (in english, japanese, chinese and french), their type and their statistics (HP, Attack, Defense...).</p>
+                    <a href="" target="_blank" class="projet-button5">LEARN MORE</a>
+                </div>
+            </article>
+            <article id="tab-projet6">
+                <div class="projet">
+                    <h1>Integration</h1>
+                    <p class="integration-txt">These models were made in HTML and CSS adapted for screens and phones.</p>
+                    <span>
+                        <img alt="Integration" src="https://media.discordapp.net/attachments/894525873758277632/953595725864894464/maquette.png?width=234&height=701">
+                        <img alt="Integration" src="https://media.discordapp.net/attachments/927520105586388992/955521686743183370/Maquette_SEO.png?width=181&height=701">
+                        <img alt="Integration" src="https://media.discordapp.net/attachments/894525873758277632/935841237502668880/Desktop.png?width=291&height=702">
+                    </span>
+                    <a href="https://github.com/RyanNeTw/Integrations" target="_blank" class="projet-button6">LEARN MORE</a>
+                </div>
+            </article>
+        </div>
+    </section>
+
+
+
+
+
+
+    <section id="bootcamp">
+        <h1>English Bootcamp</h1>
+        <article>
+            <div>
+                <h2>First Week:</h2>
+                <p>During the first week, my team composed of Remi, Pierre and Chabane created a fictitious company called BABA Home. Its goal was to sell kitchen utensils and household appliances. We were forced to speak in English only among ourselves and to write letters in English. Events were organized on kahoo! so that we could earn points in order to climb the podium and win the grand prize.</p>
+            
+            </div>
+            <div>
+                <h2>Second Week:</h2>
+                <p>During the second week, my team composed of Mika, Rebecca and Lucas created a fictitious company called Cucina maestosa. The goal was to offer typical Italian dishes such as pizzas, pasta and others. We were forced to speak in English only among ourselves and to write letters in English. Events were organized on kahoo! so that we could earn points in order to climb the podium and win the grand prize.</p>
+            </div>
+        </article>
+    </section>
+
+
+
+    <section id="contact">
+        <div class="contact-div">
+            <h1>Contact</h1>
+        </div>
+        <p>ezzerqtiryan@gmail.com</p>
+        <div>
+            <a href="" target="_blank"><i id="media" class="fab fa-linkedin"></i></a>
+            <a href="https://www.instagram.com/ryan.ezz/?hl=fr" target="_blank"><i id="media" class="fab fa-instagram"></i></a>
+            <a href="https://twitter.com/NetrozN" target="_blank"><i id="media" class="fab fa-twitter"></i></a>
+            <a href="https://github.com/RyanNeTw" target="_blank"><i id="media" class="fab fa-github"></i></a>
+        </div>
+       <button>My CV</button>
+    </section>
+
+
+    <footer>
+        <div class="left">
+            <h1>Ryan Ez Zerqti</h1>
+            <ul>
+                <li>
+                    <a href="#about" class="about-footer">About</a>
+                </li>
+                <li>
+                    <a href="#contact" class="contact-footer">Contact</a>
+                </li>
+                <li>
+                    <a href="#projects" class="project-footer">Projects</a>
+                </li>
+            </ul>
+        </div>
+        <div class="right">
+            <a href="https://github.com/RyanNeTw" target="_blank">
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="https://twitter.com/NetrozN" target="_blank">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a href="https://www.instagram.com/ryan.ezz/?hl=fr" target="_blank">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="" target="_blank">
+                <i class="fab fa-linkedin"></i>
+            </a>
+        </div>
+
+    </footer>
+
+
+
+
+
+
+
+    <script>
+            let langEl = document.querySelector('.langWrap')
+            let link = document.querySelectorAll('a')
+            let menuAbout = document.querySelector(".about")
+            let menuProject = document.querySelector(".project")
+            let menuContact = document.querySelector(".contact")
+            let hi = document.querySelector(".hi")
+            let titleAbout = document.querySelector(".title-about")
+            let aboutLine1H1 = document.querySelector(".about-line1-h1") 
+            let aboutLineP = document.querySelector(".about-line1-p")
+            let aboutLine2H1 = document.querySelector(".about-line2-h1")
+            let aboutLine2P1 = document.querySelector(".about-line2-p1")
+            let aboutLine2P2 = document.querySelector(".about-line2-p2")
+            let aboutFooter = document.querySelector(".about-footer")
+            let projectFooter = document.querySelector(".project-footer")
+            let contactFooter = document.querySelector(".contact-footer")
+            let aboutLine2H2 = document.querySelector(".about-line2-h2")
+            let aboutLine3H1 = document.querySelector(".about-line3-h1")
+            let projetButton1 = document.querySelector(".projet-button1")
+            let projetButton2 = document.querySelector(".projet-button2")
+            let projetButton3 = document.querySelector(".projet-button3")
+            let projetButton4 = document.querySelector(".projet-button4")
+            let projetButton5 = document.querySelector(".projet-button5")
+            let projetButton6 = document.querySelector(".projet-button6")
+            let karaokeTxt = document.querySelector(".karaoke-txt")
+            let rocketTxt = document.querySelector(".rocket-txt")
+            let miiloveTxt = document.querySelector(".miilove-txt")
+            let velibTxt = document.querySelector(".velib-txt")
+            let pokedexTxt = document.querySelector(".pokedex-txt")
+            let integrationTxt = document.querySelector(".integration-txt")
+            
+            link.forEach(el => {
+                el.addEventListener('click', () => {
+                langEl.querySelector('.active').classList.remove('active')
+                el.classList.add('active')
+
+                const attr = el.getAttribute('language')
+
+                menuAbout.textContent = data[attr].About
+                menuProject.textContent = data[attr].Project
+                menuContact.textContent = data[attr].contact
+                hi.textContent = data[attr].hi
+                titleAbout.textContent = data[attr].titleAbout
+                aboutLine1H1.textContent = data[attr].aboutLine1H1
+                aboutLineP.textContent = data[attr].aboutLineP
+                aboutLine2H1.textContent = data[attr].aboutLine2H1
+                aboutLine2P1.textContent = data[attr].aboutLine2P1
+                aboutLine2P2.textContent = data[attr].aboutLine2P2
+                aboutFooter.textContent = data[attr].aboutFooterTxt
+                contactFooter.textContent  =data[attr].contactFooterTxt
+                projectFooter.textContent = data[attr].projectFooterTxt
+                aboutLine2H2.textContent = data[attr].aboutLine2H2
+                aboutLine3H1.textContent = data[attr].aboutLine3H1
+                projetButton1.textContent = data[attr].projetButton
+                projetButton2.textContent = data[attr].projetButton
+                projetButton3.textContent = data[attr].projetButton
+                projetButton4.textContent = data[attr].projetButton
+                projetButton5.textContent = data[attr].projetButton
+                projetButton6.textContent = data[attr].projetButton
+                karaokeTxt.textContent = data[attr].karaokeTxt
+                rocketTxt.textContent = data[attr].rocketTxt
+                miiloveTxt.textContent = data[attr].miiloveTxt
+                velibTxt.textContent = data[attr].velibTxt
+                pokedexTxt.textContent = data[attr].pokedexTxt
+                integrationTxt.textContent = data[attr].integrationTxt
+                });
+            });
+            var data = {
+                "english": 
+                {
+                "About": "About",
+                "Project":"Projects",
+                "contact":"Contact",
+                "hi": "Hi, I'm Ryan Ez Zerqti",
+                "titleAbout" : "About me",
+                "aboutLine1H1" : ", I'm still learning",
+                "aboutLineP" : "Web developer student",
+                "aboutLine2H1": "I love",
+                "projectFooterTxt": "Projects",
+                "aboutFooterTxt":"About",
+                "contactFooterTxt":"contact",
+                "aboutLine2H1": "I love",
+                "aboutLine2P1" : "programming",
+                "aboutLine2P2" : "video games",
+                "aboutLine2H2" : "and",
+                "aboutLine3H1" : "I'am currently a student at",
+                "projetButton" : "LEARN MORE",
+                "karaokeTxt" : "I developed a karaoke using JavaScript which displays lyrics while the music is playing. Using a file containing lyrics and timings to show them. I used Regex to sort timings and lyrics of the text file, and using AJAX method to display lyrics on the page.",
+                "rocketTxt" : "A tournament creation simulation related to the cult game rocket league. The project was developed in PHP following the mvc model. You can create and join games related to the game according to the number of tokens in possession.",
+                "miiloveTxt" : "This is an end of year project, done with other fellow developers, designers and markets. We simulated a dating site for activists, I focused on the back end.",
+                "velibTxt" : "This project I devlopped in JavaScript, allows anyone to see the main informations about velibs in the Parmentier street in Paris. It first shows you a loading bar representing the percentage of velibs available in the street compared to the total number of charging stations. Then it shows you the exact number of velibs available (in green if the percentage is greater than the third of the total of charging borns, in red in the other case). You can also see the percentage of eVelibs (electric ones) and mechanical velibs. There is also a small map to know exactly where is the street.",
+                "pokedexTxt" : "This Pokedex made in PHP, allows you to search any Pokemon by his name, or if you don't have a favorite Pokemon to search for, you simply can search a type and it will shows you all Pokemons of the selected type. I used a JSON file containing multiple informations about more than 800 Pokemons, like their ID, their names (in english, japanese, chinese and french), their type and their statistics (HP, Attack, Defense...).",
+                "integrationTxt" : "These models were made in HTML and CSS adapted for screens and phones.",
+
+                },
+                "french": 
+                {
+                "About": "A propos",
+                "Project":"Projets",
+                "contact":"Contact",
+                "hi": "Hi, c'est Ryan Ez zerqti",
+                "titleAbout" : "A propos",
+                "aboutLine1H1" : ", toujours en apprentissage",
+                "aboutLineP" : "Web developer student",
+                "aboutLine2H1": "J'aime",
+                "projectFooterTxt": "Projets",
+                "aboutFooterTxt":"A propos",
+                "contactFooterTxt":"contact",
+                "aboutLine2P1" : "programmer",
+                "aboutLine2P2" : "jeux video",
+                "aboutLine2H2" : "et",
+                "aboutLine3H1" : "J'étudie actuellement a ",
+                "projetButton" : "Découvir",
+                "karaokeTxt" : "J'ai développé un karaoké utilisant JavaScript qui affiche les paroles pendant que la musique est jouée. J'utilise un fichier contenant les paroles et les timings pour les afficher. J'ai utilisé Regex pour trier les timings et les paroles du fichier texte, et j'ai utilisé la méthode AJAX pour afficher les paroles sur la page.",
+                "rocketTxt" : "Une simulation de création de tournoi liée au jeu culte rocket league. Le projet a été développé en PHP selon le modèle mvc. Vous pouvez créer et rejoindre des parties liées au jeu en fonction du nombre de jetons en votre possession.",
+                "miiloveTxt" : "C'est un projet de fin d'année, réalisé avec d'autres collègues développeurs, designers et marchés. Nous avons simulé un site de rencontre pour les militants, je me suis concentré sur le back-end.",
+                "velibTxt" : "Ce projet que j'ai développé en JavaScript, permet à quiconque de voir les principales informations sur les velibs dans la rue Parmentier à Paris. Il vous montre d'abord une barre de chargement représentant le pourcentage de velibs disponibles dans la rue par rapport au nombre total de bornes de recharge. Il vous indique ensuite le nombre exact de velibs disponibles (en vert si le pourcentage est supérieur au tiers du total des bornes de recharge, en rouge dans le cas contraire). Vous pouvez également voir le pourcentage d'eVelibs (électriques) et de velibs mécaniques. Il y a aussi une petite carte pour savoir exactement où se trouve la rue.",
+                "pokedexTxt" : "Ce Pokedex réalisé en PHP, vous permet de rechercher n'importe quel Pokemon par son nom, ou si vous n'avez pas de Pokemon préféré à rechercher, vous pouvez simplement rechercher un type et il vous montrera tous les Pokemons du type sélectionné. J'ai utilisé un fichier JSON contenant de multiples informations sur plus de 800 Pokemon, comme leur ID, leur nom (en anglais, japonais, chinois et français), leur type et leurs statistiques (HP, Attaque, Défense...).",
+                "integrationTxt" : "Ces modèles ont été réalisés en HTML et CSS adaptés aux écrans et aux téléphones.",
+
+                },
+            }
+    </script>
+</body>
+</html>

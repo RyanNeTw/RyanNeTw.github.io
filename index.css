@@ -1,0 +1,534 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;500;700&display=swap');
+*,
+*:before,
+*,::after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+::-webkit-scrollbar{
+    display: none;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: #0d0d0d;
+    font-family: 'Inconsolata',sans-serif;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 200px;
+    background-color: #d5d5d5;
+}
+header h1{
+    color: #000;
+    border: 1px #000 solid;
+    align-self: center;
+    padding: 10px 5px 10px 5px;
+    box-shadow:  3px 3px 0 0 #000;
+    font-size: 20px;
+    margin: 10px 0px 10px 0px;
+}
+header h1 a{
+    color: #000;
+    text-decoration: none;
+}   
+header h1:hover{
+    box-shadow: none;
+    transform: translate3d(3px, 3px, 0);
+    box-shadow: inset 1px 1px 5px 1px #000;
+}
+
+header ul{
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+}
+header ul li{
+    display: flex;
+}
+header ul li a{
+    text-decoration: none;
+    color: #0d0d0d;
+    align-self: center;
+    font-size: 18px;
+    text-transform: uppercase;
+    position: relative;
+    letter-spacing: 1px;
+}
+header ul li a:after{
+    content: "";
+    position: absolute;
+    background-color: #0d0d0d;
+    height: 2px;
+    width: 0;
+    left: 0;
+    bottom: -7px;
+    transition: 0.7s;
+}
+header ul li a:hover:after{
+    width: 100%;
+}
+.langWrap{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+.langWrap a{
+    text-decoration: none;
+    color: #0d0d0d;
+    align-self: center;
+}
+
+/*End header*/
+
+
+/*Start Menu*/
+#menu{
+    padding: 200px 200px 0px 200px;
+}
+#menu div{
+    border: #0d0d0d solid 1px;
+}
+#menu input{
+    display: none;
+}
+#menu div ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+#menu div ul li{
+    flex: 1;
+}
+#menu div ul li label{
+    color: black;
+    background-color: #d5d5d5;
+    display: block;
+    padding: 10px 0px 10px 0px;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.1s;
+}
+#menu div article{
+    background-color: #d5d5d5;
+}
+#menu div ul li label:hover{
+    background-color: #0d0d0d;
+    color: #c0ff6b;
+}
+#menu div ul li label:hover,
+#tab-projet1:checked ~ ul label[for="tab-projet1"],
+#tab-projet2:checked ~ ul label[for="tab-projet2"],
+#tab-projet3:checked ~ ul label[for="tab-projet3"],
+#tab-projet4:checked ~ ul label[for="tab-projet4"],
+#tab-projet5:checked ~ ul label[for="tab-projet5"],
+#tab-projet6:checked ~ ul label[for="tab-projet6"]
+{
+    background-color: #0d0d0d;
+    color: #c0ff6b;
+}
+#tab-projet1:checked ~ #tab-projet1,
+#tab-projet2:checked ~ #tab-projet2,
+#tab-projet3:checked ~ #tab-projet3,
+#tab-projet4:checked ~ #tab-projet4,
+#tab-projet5:checked ~ #tab-projet5,
+#tab-projet6:checked ~ #tab-projet6{
+    display: flex;
+}
+#tab-projet2,#tab-projet1,#tab-projet3,#tab-projet4,#tab-projet5,#tab-projet6{
+    display: none;
+}
+#menu div article .projet{
+    padding: 20px 20px 20px 20px;
+    display: flex;
+    flex-direction: column;
+    gap:15px;
+}
+#menu div article .projet h1{
+    font-size: 25px;
+}
+#menu div article .projet a{
+    width: 115px;
+    padding: 10px 15px 10px 15px;
+    border-radius: 2px;
+    text-decoration: none;
+    color: black;
+    position: relative; 
+    border: 1px solid black;
+}
+#menu div article .projet a::after{
+    content: '';
+    position: absolute;
+    top: -1px;
+    left: 0px;
+    width: 0;
+    height: 38px;
+    background-color: #000;
+    border-radius: 1px;
+    transition: 1s;
+    opacity: 20%;
+}
+#menu div article .projet a:hover::after{
+    width: 100%;
+}
+#menu div article span{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 195px;
+}
+
+/*End Menu*/
+
+
+/*Intro*/
+#intro h1 {
+    color: #c0ff6b;
+    display: flex;
+    flex-direction: row;
+    gap: 18px;
+    padding:0px 200px;
+    font-size: 40px;
+    margin-top: 50px;
+}
+#intro h1 p{
+    color: #c0ff6b;
+}
+.ml4 .letters {
+    position: absolute;
+    margin: auto;
+    left: 373px;
+    color: #d5d5d5;
+    font-size: 25px;
+}
+/*End Intro */
+
+
+/*About*/
+#about{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 200px 200px 0px 200px;
+}
+#about img{
+    height: 300px;
+    border-radius: 50%;
+}
+.about-txt{
+    align-self: center;
+    text-transform: uppercase;
+}
+#about h2{
+    color:#000;
+    font-size: 50px;
+    padding: 2px 10px 2px 10px;
+    margin: 0;
+    align-self: center;
+    background-color: #c0ff6b;
+    width: 220px;
+}
+#about h1{
+    color: #d5d5d5;
+    font-size: 30px;
+}
+.about-txt-inside{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+#about p{
+    font-size: 30px;
+    color: #c0ff6b;
+    letter-spacing: 0.5px;
+}
+#arrow{
+    color: #c0ff6b;
+    font-size: 60px;
+    position: absolute;
+    top: 650px;
+    left: 1300px;
+    opacity: 80%;
+    transition: 0.3s;
+}
+#arrow:hover{
+    opacity: 100%;
+}
+/* End About*/
+
+/*Contact*/
+#contact{
+    border-top: 1px solid #d5d5d5;
+    border-bottom: 1px solid #d5d5d5;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.contact-div{
+    background-color: #c0ff6b;
+    width: 200px;
+    align-self: center;
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    height: 15px;
+}
+#contact h1{
+    color: #000;
+    align-self: center;
+    font-size: 40px;
+    letter-spacing: 2px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+#contact div{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px 0px 20px 0px;
+}
+#media{
+    font-size: 40px;
+    color: white;
+    animation: descente 2s;
+}
+#media:hover{
+    color: #c0ff6b;
+    transition: 0.5s;
+    animation: monter 2s ;
+}
+@keyframes monter{
+    0%{
+        transform: translateY(0px);
+    }
+    100%{
+        transform: translateY(-5px);
+    }
+}
+@keyframes descente{
+    0%{
+        transform: translateY(-5px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+#contact button{
+    width: 160px;
+    align-self: center;
+    font-size: 25px;
+    border: #c0ff6b 1px solid;
+    background-color: #000;
+    color: #c0ff6b;
+    cursor: pointer;
+    letter-spacing: 2px;
+    animation: width-modif-out 1s forwards;
+    margin-bottom: 20px;
+}
+#contact button:hover{
+    animation: width-modif 2s forwards ;
+}
+@keyframes width-modif {
+    0%{
+        
+    }
+    100%{
+        width: 180px;
+    }
+}
+@keyframes width-modif-out {
+    0%{
+        width: 180px;
+    }
+    100%{
+        width: 160px;
+    }
+}
+#contact p{
+    color:#d5d5d5;
+    align-self: center;
+    font-size: 20px;
+    padding-top: 10px;
+    letter-spacing: 0.5px;
+}
+/*End Contact*/
+
+
+
+/*Start English bootcamp*/
+#bootcamp{
+    padding: 200px 200px 100px 200px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+#bootcamp h1{
+    font-size: 35px;
+    color: #0d0d0d;
+    font-weight: bold;
+    background-color: #c0ff6b;
+    padding: 5px 10px 5px 10px;
+    width:300px;
+    align-self: center;
+}
+#bootcamp article{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #d5d5d5;
+    padding: 20px 20px 20px 20px;
+    gap: 30px;
+}
+#bootcamp article div{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+#bootcamp article div h2{
+    font-size: 25px;
+}
+
+
+
+
+
+
+
+
+
+
+/*End eglish bootcamp*/
+
+
+
+
+
+
+/*Footer*/
+footer{
+    background-color: #d5d5d5;
+    padding: 0px 200px 0px 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+footer h1{
+    font-size: 25px;
+}
+footer .left{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 10px 0px 10px 0px;
+}
+footer ul{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+footer ul li{
+    font-size: 15px;
+}
+footer ul li a{
+    text-decoration: none;
+    color: #000;
+}
+footer ul li a:hover{
+    color: #656565;
+    text-decoration: line-through 1px #656565 solid;
+}
+footer .right{
+    align-self: center;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+footer .right a{
+    font-size: 30px;
+    text-decoration: none;
+    color: #000;
+}
+footer .right a:hover{
+    opacity: 70%;
+}
+/*End Footer*/
+
+
+/*Start Responsive*/
+@media screen and (max-width: 950px){
+    header{
+        padding: 0px 30px 0px 30px;
+    }
+    header ul{
+        gap: 10px;
+    }
+    header ul li a{
+        font-size: 12px;
+    }
+    header .langWrap{
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+    }
+    #intro h1{
+        font-size: 25px;
+        padding: 0px 100px;
+    }
+    #intro span{
+        font-size: 20px;
+        left: 190px;
+    }
+    #about{
+        padding: 100px 0px 0px 0px;
+        display: flex;
+        justify-content: center;
+    }
+    #about img{
+        display: none;
+    }
+    #about h1{
+        font-size: 20px;
+        gap: 3px;
+    }
+    #about p{
+        font-size: 20px;
+    }
+    #arrow{
+        display: none;
+    }
+    #menu{
+        padding: 100px 100px 0px 100px;
+    }
+    #menu div article span{
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+    }
+    #menu div article span img{
+        height: 220px;
+    }  
+    #menu div ul  li label{
+        font-size: 9px;
+    }
+    #bootcamp{
+        padding: 100px 30px 0px 30px;
+    }
+    #bootcamp article{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+    footer{
+        padding: 0px 30px 0px 30px;
+    }
+}
+
+
+
+
+
