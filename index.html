@@ -147,13 +147,13 @@
         <h1>English Bootcamp</h1>
         <article>
             <div>
-                <h2>First Week:</h2>
-                <p>During the first week, my team composed of Remi, Pierre and Chabane created a fictitious company called BABA Home. Its goal was to sell kitchen utensils and household appliances. We were forced to speak in English only among ourselves and to write letters in English. Events were organized on kahoo! so that we could earn points in order to climb the podium and win the grand prize.</p>
+                <h2 class="week1English">First Week:</h2>
+                <p class="text1English">During the first week, my team composed of Remi, Pierre and Chabane created a fictitious company called BABA Home. Its goal was to sell kitchen utensils and household appliances. We were forced to speak in English only among ourselves and to write letters in English. Events were organized on kahoo! so that we could earn points in order to climb the podium and win the grand prize.</p>
             
             </div>
             <div>
-                <h2>Second Week:</h2>
-                <p>During the second week, my team composed of Mika, Rebecca and Lucas created a fictitious company called Cucina maestosa. The goal was to offer typical Italian dishes such as pizzas, pasta and others. We were forced to speak in English only among ourselves and to write letters in English. Events were organized on kahoo! so that we could earn points in order to climb the podium and win the grand prize.</p>
+                <h2 class="week2English">Second Week:</h2>
+                <p class="text2English">During the second week, my team composed of Mika, Rebecca and Lucas created a fictitious company called Cucina maestosa. The goal was to offer typical Italian dishes such as pizzas, pasta and others. We were forced to speak in English only among ourselves and to write letters in English. Events were organized on kahoo! so that we could earn points in order to climb the podium and win the grand prize.</p>
             </div>
         </article>
     </section>
@@ -243,7 +243,12 @@
             let velibTxt = document.querySelector(".velib-txt")
             let pokedexTxt = document.querySelector(".pokedex-txt")
             let integrationTxt = document.querySelector(".integration-txt")
-            
+            let week1English = document.querySelector(".week1English")
+            let week2English  =document.querySelector(".week2English")
+            let text1English = document.querySelector(".text1English")
+            let text2English = document.querySelector(".text2English")
+
+
             link.forEach(el => {
                 el.addEventListener('click', () => {
                 langEl.querySelector('.active').classList.remove('active')
@@ -278,6 +283,10 @@
                 velibTxt.textContent = data[attr].velibTxt
                 pokedexTxt.textContent = data[attr].pokedexTxt
                 integrationTxt.textContent = data[attr].integrationTxt
+                week1English.textContent = data[attr].week1English
+                week2English.textContent = data[attr].week2English
+                text1English.textContent = data[attr].text1English
+                text2English.textContent = data[attr].text2English
                 });
             });
             var data = {
@@ -306,6 +315,10 @@
                 "velibTxt" : "This project I devlopped in JavaScript, allows anyone to see the main informations about velibs in the Parmentier street in Paris. It first shows you a loading bar representing the percentage of velibs available in the street compared to the total number of charging stations. Then it shows you the exact number of velibs available (in green if the percentage is greater than the third of the total of charging borns, in red in the other case). You can also see the percentage of eVelibs (electric ones) and mechanical velibs. There is also a small map to know exactly where is the street.",
                 "pokedexTxt" : "This Pokedex made in PHP, allows you to search any Pokemon by his name, or if you don't have a favorite Pokemon to search for, you simply can search a type and it will shows you all Pokemons of the selected type. I used a JSON file containing multiple informations about more than 800 Pokemons, like their ID, their names (in english, japanese, chinese and french), their type and their statistics (HP, Attack, Defense...).",
                 "integrationTxt" : "These models were made in HTML and CSS adapted for screens and phones.",
+                "week1English" : "First Week:",
+                "week2English" : "Second Week:",
+                "text1English" : "During the first week, my team composed of Remi, Pierre and Chabane created a fictitious company called BABA Home. Its goal was to sell kitchen utensils and household appliances. We were forced to speak in English only among ourselves and to write letters in English. Events were organized on kahoo! so that we could earn points in order to climb the podium and win the grand prize.",
+                "text2English" : "During the second week, my team composed of Mika, Rebecca and Lucas created a fictitious company called Cucina maestosa. The goal was to offer typical Italian dishes such as pizzas, pasta and others. We were forced to speak in English only among ourselves and to write letters in English. Events were organized on kahoo! so that we could earn points in order to climb the podium and win the grand prize.",
 
                 },
                 "french": 
@@ -320,7 +333,7 @@
                 "aboutLine2H1": "J'aime",
                 "projectFooterTxt": "Projets",
                 "aboutFooterTxt":"A propos",
-                "contactFooterTxt":"contact",
+                "contactFooterTxt":"Contact",
                 "aboutLine2P1" : "programmer",
                 "aboutLine2P2" : "jeux video",
                 "aboutLine2H2" : "et",
@@ -332,6 +345,11 @@
                 "velibTxt" : "Ce projet que j'ai développé en JavaScript, permet à quiconque de voir les principales informations sur les velibs dans la rue Parmentier à Paris. Il vous montre d'abord une barre de chargement représentant le pourcentage de velibs disponibles dans la rue par rapport au nombre total de bornes de recharge. Il vous indique ensuite le nombre exact de velibs disponibles (en vert si le pourcentage est supérieur au tiers du total des bornes de recharge, en rouge dans le cas contraire). Vous pouvez également voir le pourcentage d'eVelibs (électriques) et de velibs mécaniques. Il y a aussi une petite carte pour savoir exactement où se trouve la rue.",
                 "pokedexTxt" : "Ce Pokedex réalisé en PHP, vous permet de rechercher n'importe quel Pokemon par son nom, ou si vous n'avez pas de Pokemon préféré à rechercher, vous pouvez simplement rechercher un type et il vous montrera tous les Pokemons du type sélectionné. J'ai utilisé un fichier JSON contenant de multiples informations sur plus de 800 Pokemon, comme leur ID, leur nom (en anglais, japonais, chinois et français), leur type et leurs statistiques (HP, Attaque, Défense...).",
                 "integrationTxt" : "Ces modèles ont été réalisés en HTML et CSS adaptés aux écrans et aux téléphones.",
+                "week1English" : "Premiere Semaine:",
+                "week2English" : "Deuxieme Semaine:",
+                "text1English" : "Durant la première semaine, mon équipe composée de Rémi, Pierre et Chabane a créé une entreprise fictive appelée BABA Home. Son but était de vendre des ustensiles de cuisine et des appareils ménagers. Nous étions obligés de parler en anglais uniquement entre nous et d'écrire des lettres en anglais. Des événements étaient organisés sur kahoo ! pour nous permettre de gagner des points afin de monter sur le podium et de remporter le grand prix.",
+                "text2English" : "Pendant la deuxième semaine, mon équipe composée de Mika, Rebecca et Lucas a créé une entreprise fictive appelée Cucina maestosa. Le but était de proposer des plats typiquement italiens tels que des pizzas, des pâtes et autres. Nous étions obligés de parler en anglais uniquement entre nous et d'écrire des lettres en anglais. Des événements étaient organisés sur kahoo ! afin que nous puissions gagner des points pour monter sur le podium et remporter le grand prix.",
+
 
                 },
             }
