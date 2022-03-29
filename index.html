@@ -15,8 +15,8 @@
    <header>
        <h1><a href="">Ryan Ez Zerqti</a></h1>   
        <ul class="langWrap">
-            <a href="#"  language='english' class="active english">English</a>
-            <a href="#" language='french' class="french">Francais</a>
+            <a href="#"  language='english' class="active english languageSwitch">English</a>
+            <a href="#" language='french' class="french languageSwitch">Francais</a>
        </ul>
        <ul>
            <li>
@@ -215,7 +215,7 @@
 
     <script>
             let langEl = document.querySelector('.langWrap')
-            let link = document.querySelectorAll('a')
+            let link = document.querySelectorAll('.languageSwitch')
             let menuAbout = document.querySelector(".about")
             let menuProject = document.querySelector(".project")
             let menuContact = document.querySelector(".contact")
