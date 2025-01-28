@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Canvas Drawing Prediction</title>
+    <link rel="stylesheet" href="static/style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/onnxjs/dist/onnx.min.js"></script>
+  </head>
+  <body>
+    <h1>Draw a Digit or Operation</h1>
+    <canvas
+      id="canvas"
+      width="280"
+      height="280"
+      style="border: 1px solid black"
+    ></canvas>
+
+    <div>
+      <button id="ClearButton">Clear</button>
+      <button id="ExtractButton">Extract Operation</button>
+    </div>
+
+    <h2>Prediction Result</h2>
+    <div id="arrayDisplay">Draw something above to predict.</div>
+
+    <h3>Prediction Output:</h3>
+    <div id="result"></div>
+
+    <h3>Model Status:</h3>
+    <div id="loadingIndicator">Loading model...</div>
+
+    <script src="static/script.js"></script>
+  </body>
+</html>
